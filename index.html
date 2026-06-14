@@ -3,11 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushika's ANDHRA KITCHEN | Authentic Andhra Taste in Dharwad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rushika's ANDHRA KITCHEN | Authentic Guntur Taste in Dharwad</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
+                extend: {
+                    colors: {
+                        andhra: {
+                            red: '#991b1b',
+                            gold: '#b45309',
+                            dark: '#1c1917',
+                            light: '#fffbeb'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .heading-font { font-family: 'Playfair Display', serif; }
+        .logo-font { font-family: 'Rowdies', sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <div class="flex flex-col items-start leading-none pt-1">
+                <span class="text-stone-400 text-sm font-semibold tracking-wide lowercase">Rushika's</span>
+                <span class="logo-font text-2xl md:text-3xl lg:text-4xl text-andhra-red tracking-wider">ANDHRA KITCHEN</span>
+                <span class="text-xs bg-andhra-gold text-white font-semibold px-2 py-0.5 rounded-full uppercase tracking-widest block sm:inline mt-1.5 self-start">Family Restaurant</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 font-medium text-stone-600">
+                <a href="#home" class="hover:text-andhra-red transition-colors">Home</a>
+                <a href="#why-us" class="hover:text-andhra-red transition-colors">Our Promise</a>
+                <a href="#menu" class="hover:text-andhra-red transition-colors">The Menu</a>
+                <a href="#curry-point" class="hover:text-andhra-red transition-colors">Curry Point</a>
+                <a href="#contact" class="bg-andhra-red text-white px-5 py-2.5 rounded-lg hover:bg-red-800 transition-colors shadow-md text-sm">Visit Dharwad</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden p-2 text-stone-700 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#home" class="block py-2.5 text-stone-600 font-medium hover:text-andhra-red border-b border-stone-100">Home</a>
+            <a href="#why-us" class="block py-2.5 text-stone-600 font-medium hover:text-andhra-red border-b border-stone-100">Our Promise</a>
+            <a href="#menu" class="block py-2.5 text-stone-600 font-medium hover:text-andhra-red border-b border-stone-100">The Menu</a>
+            <a href="#curry-point" class="block py-2.5 text-stone-600 font-medium hover:text-andhra-red border-b border-stone-100">Curry Point</a>
+            <a href="#contact" class="block text-center bg-andhra-red text-white px-4 py-2.5 rounded-lg font-medium text-sm mt-3">Find Us in Dharwad</a>
+        </div>
+    </header>
+
+    <section id="home" class="pt-28 min-h-screen flex items-center bg-gradient-to-br from-andhra-light via-white to-orange-50/50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-left z-10">
+                <span class="inline-flex items-center gap-1.5 bg-red-100 text-andhra-red text-xs md:text-sm font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                    🔥 Dharwad's Final Authentic Spice Destination
+                </span>
+                <h1 class="heading-font text-5xl sm:text-6xl lg:text-7xl text-stone-950 font-extrabold leading-tight">
+                    Taste of Andhra. <br class="hidden md:block">
+                    Ultimate <span class="text-andhra-red">Non-Veg</span> Paradise.
+                </h1>
+                <p class="text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Craving the real, fiery Guntur heat? Experience an authentic <strong class="text-andhra-dark">Andhra non-veg meal</strong> inside our sparkling clean, spacious restaurant. Fresh ingredients, traditional masalas, and unmatched hospitality.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+                    <a href="#menu" class="w-full sm:w-auto text-center bg-andhra-red text-white font-semibold px-8 py-4 rounded-xl hover:bg-red-800 transition-all shadow-xl shadow-red-900/10 transform hover:-translate-y-0.5 text-base"> Explore The Menu </a>
+                    <a href="#curry-point" class="w-full sm:w-auto text-center bg-white border-2 border-stone-200 text-stone-800 font-semibold px-8 py-4 rounded-xl hover:bg-stone-50 transition-all text-base"> Curry Point & Takeaway </a>
+                </div>
+            </div>
+            
+            <div class="relative flex justify-center items-center h-[28rem]">
+                <div class="absolute inset-0 bg-gradient-to-tr from-andhra-gold/10 to-transparent rounded-full filter blur-3xl w-72 h-72 md:w-96 md:h-96 mx-auto"></div>
+                
+                <div class="relative w-full max-w-md h-[24rem] rounded-3xl overflow-hidden shadow-2xl border border-stone-100 group z-10">
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/12740972965253317010" alt="Mutton Biriyani" class="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/30 to-transparent flex flex-col justify-end p-6">
+                            <span class="text-xs bg-andhra-gold text-white px-3 py-1 rounded-full w-max mb-2 font-bold uppercase tracking-wider shadow-sm">Wed-Sun Classic</span>
+                            <h3 class="heading-font text-white text-3xl font-bold">Mutton Biriyani</h3>
+                            <p class="text-stone-300 text-sm mt-1">Rich, aromatic, and aggressively spiced.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/2685485658025128801" alt="Chicken Biriyani" class="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/30 to-transparent flex flex-col justify-end p-6">
+                            <span class="text-xs bg-andhra-red text-white px-3 py-1 rounded-full w-max mb-2 font-bold uppercase tracking-wider shadow-sm">Customer Favorite</span>
+                            <h3 class="heading-font text-white text-3xl font-bold">Chicken Biriyani</h3>
+                            <p class="text-stone-300 text-sm mt-1">Tender meat cooked in native masalas.</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/742112237835533214" alt="Chilli Chicken" class="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/30 to-transparent flex flex-col justify-end p-6">
+                            <span class="text-xs bg-red-600 text-white px-3 py-1 rounded-full w-max mb-2 font-bold uppercase tracking-wider shadow-sm">Extreme Spice</span>
+                            <h3 class="heading-font text-white text-3xl font-bold">Andhra Chilli Chicken</h3>
+                            <p class="text-stone-300 text-sm mt-1">Guntur chillies, curry leaves, pure heat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-24 bg-white border-y border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold text-andhra-gold uppercase tracking-widest block mb-1">Our Core Commitment</span>
+                <h2 class="heading-font text-4xl sm:text-5xl text-stone-950 font-bold leading-tight">Setting the Standard in Dharwad</h2>
+                <p class="text-stone-600 text-lg leading-relaxed pt-1">Great food requires exceptional care. We are strictly committed to uncompromised cleanliness and premium comfort for your family and friends. </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-stone-50 rounded-2xl border border-stone-100 overflow-hidden transition-transform hover:-translate-y-1 group flex flex-col">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/15966888403036451859" alt="Clean Kitchen" class="w-full h-48 object-cover">
+                    <div class="p-8 space-y-4 flex-1">
+                        <h3 class="text-2xl font-bold text-stone-950">Sparkless Clean Kitchen</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            We have a strictly non-negotiable hygiene standard. Our kitchen in Dharwad operates under rigorous, daily sanitation protocols with fresh ingredients.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 rounded-2xl border border-stone-100 overflow-hidden transition-transform hover:-translate-y-1 group flex flex-col">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/49948685150586670" alt="Restaurant Seating" class="w-full h-48 object-cover">
+                    <div class="p-8 space-y-4 flex-1">
+                        <h3 class="text-2xl font-bold text-stone-950">Generous & Comfy Seating</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Say goodbye to cramped spaces. We have designed a wide, well-ventilated ambient environment perfect for both large family gatherings and peaceful meals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-stone-50 rounded-2xl border border-stone-100 overflow-hidden transition-transform hover:-translate-y-1 group flex flex-col lg:col-span-1 md:col-span-2">
+                    <div class="w-full h-48 bg-andhra-red/10 flex items-center justify-center">
+                         <span class="text-7xl">🌶️</span>
+                    </div>
+                    <div class="p-8 space-y-4 flex-1">
+                        <h3 class="text-2xl font-bold text-stone-950">Pure Guntur-Origin Spice</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            We don't do 'mild.' Our masalas are custom-blended using peppers brought directly from verified farms in Guntur. Experience robust native warmth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4 border-b border-stone-200 pb-10">
+                <div>
+                    <span class="text-xs font-bold text-andhra-gold uppercase tracking-widest block mb-2">Curated Premium Selection</span>
+                    <h2 class="heading-font text-4xl sm:text-5xl text-stone-950 font-bold leading-tight">Authentic Andhra Specialties</h2>
+                    <p class="text-andhra-red font-semibold text-lg pt-1">Best for Non-Veg Enthusiasts in Dharwad.</p>
+                </div>
+                <div class="bg-white border border-stone-200 p-1.5 rounded-xl flex space-x-1 shadow-sm">
+                    <span class="px-5 py-2.5 bg-andhra-red text-white text-xs font-semibold rounded-lg cursor-pointer">All Serving Items</span>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="heading-font text-2xl font-bold text-stone-950 mb-6 border-l-4 border-andhra-red pl-4">RICE</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-stone-100 flex flex-col">
+                        <div class="h-56 relative w-full">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/12740972965253317010" alt="Mutton Biriyani" class="w-full h-full object-cover absolute inset-0">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 to-transparent flex flex-col justify-end p-6 text-white z-10">
+                                <span class="text-xs bg-white/20 backdrop-blur-sm px-2 py-1 rounded w-max mb-1 font-semibold uppercase tracking-wider">Wed-Sun Only</span>
+                                <h3 class="heading-font text-2xl font-bold">Mutton Biriyani</h3>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-center gap-3 mb-2">
+                                <h3 class="font-bold text-lg text-stone-900 leading-tight">Andhra Mutton Biriyani</h3>
+                                <span class="text-andhra-red font-extrabold text-xl whitespace-nowrap">₹260/-</span>
+                            </div>
+                            <p class="text-stone-500 text-sm leading-relaxed">Classic long-grain basmati layered with aggressively-spiced marinated mutton pieces.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-stone-100 flex flex-col">
+                        <div class="h-56 relative w-full">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/2685485658025128801" alt="Chicken Biriyani" class="w-full h-full object-cover absolute inset-0">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 to-transparent flex flex-col justify-end p-6 text-white z-10">
+                                <span class="text-xs bg-white/20 backdrop-blur-sm px-2 py-1 rounded w-max mb-1 font-semibold uppercase tracking-wider">Wed-Sun Only</span>
+                                <h3 class="heading-font text-2xl font-bold">Chicken Biriyani</h3>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-center gap-3 mb-2">
+                                <h3 class="font-bold text-lg text-stone-900 leading-tight">Andhra Chicken Biriyani</h3>
+                                <span class="text-andhra-red font-extrabold text-xl whitespace-nowrap">₹220/-</span>
+                            </div>
+                            <p class="text-stone-500 text-sm leading-relaxed">Tender chicken pieces cooked to perfection in aromatic basmati rice and secret spices.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-3xl p-6 shadow-sm border border-stone-100 flex justify-between items-center transition-shadow hover:shadow-lg">
+                            <div>
+                                <h3 class="font-bold text-lg text-stone-900 leading-tight">Bagar Rice</h3>
+                                <p class="text-stone-500 text-xs mt-1">Cooked in ghee with whole spices.</p>
+                            </div>
+                            <span class="text-andhra-red font-extrabold text-xl whitespace-nowrap">₹90/-</span>
+                        </div>
+                        <div class="bg-white rounded-3xl p-6 shadow-sm border border-stone-100 flex justify-between items-center transition-shadow hover:shadow-lg">
+                            <div>
+                                <h3 class="font-bold text-lg text-stone-900 leading-tight">White Rice</h3>
+                                <p class="text-stone-500 text-xs mt-1">Steamed premium quality white rice.</p>
+                            </div>
+                            <span class="text-andhra-red font-extrabold text-xl whitespace-nowrap">₹40/-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="heading-font text-2xl font-bold text-stone-950 mb-6 border-l-4 border-andhra-red pl-4">STARTERS</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-3xl p-6 shadow-sm border border-stone-100 flex flex-col justify-between space-y-3 transition-shadow hover:shadow-lg">
+                        <div class="flex justify-between items-start gap-3">
+                            <h3 class="font-bold text-lg text-stone-900 leading-tight">Chicken Fry</h3>
+                            <span class="text-andhra-red font-extrabold text-xl whitespace-nowrap">₹180/-</span>
+                        </div>
+                        <p class="text-stone-500 text-sm leading-relaxed">Juicy chicken pieces marinated in robust Guntur spices and deep-fried to perfection.</p>
+                    </div>
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-stone-100 flex flex-col group">
+                        <div class="h-40 relative w-full">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/742112237835533214" alt="Chilli Chicken" class="w-full h-full object-cover absolute inset-0">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 to-transparent flex flex-col justify-end p-4 text-white z-10">
+                                <h3 class="heading-font text-xl font-bold">Andhra Chilli Chicken</h3>
+                            </div>
+                        </div>
+                        <div class="p-5 flex justify-between items-center gap-3">
+                            <h3 class="font-bold text-base text-stone-900 leading-tight">Spicy Chilli Chicken</h3>
+                            <span class="text-andhra-red font-extrabold text-xl whitespace-nowrap">₹190/-</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl p-6 shadow-sm border border-stone-100 flex flex-col justify-between space-y-3 transition-shadow hover:shadow-lg lg:col-span-1 md:col-span-2">
+                        <div class="flex justify-between items-start gap-3">
+                            <h3 class="font-bold text-lg text-stone-900 leading-tight">Liver Fry</h3>
+                            <span class="text-andhra-red font-extrabold text-xl whitespace-nowrap">₹240/-</span>
+                        </div>
+                        <p class="text-stone-500 text-sm leading-relaxed">Tender chicken liver prepared in dynamic spice blend, Guntur style.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex justify-between items-center"><span class="font-semibold text-stone-800">Chicken Kabab</span><span class="text-andhra-red font-bold">₹160/-</span></div>
+                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex justify-between items-center"><span class="font-semibold text-stone-800">Mutton Fry</span><span class="text-andhra-red font-bold">₹240/-</span></div>
+                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex justify-between items-center"><span class="font-semibold text-stone-800">Egg Omlet (S/D)</span><span class="text-andhra-red font-bold">₹30/60/-</span></div>
+                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex justify-between items-center"><span class="font-semibold text-stone-800">Egg Burji</span><span class="text-andhra-red font-bold">₹80/-</span></div>
+                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex justify-between items-center"><span class="font-semibold text-stone-800">Boiled Egg</span><span class="text-andhra-red font-bold">₹20/-</span></div>
+                     <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex justify-between items-center"><span class="font-semibold text-stone-800">Boiled Egg Masala</span><span class="text-andhra-red font-bold">₹80/-</span></div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="heading-font text-2xl font-bold text-stone-950 mb-6 border-l-4 border-andhra-red pl-4">THALI</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                     <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-stone-100 flex flex-col items-center text-center space-y-3">
+                         <h3 class="font-bold text-lg text-stone-900">Mutton Thali</h3>
+                         <span class="text-andhra-red font-extrabold text-2xl">₹280/-</span>
+                     </div>
+                     <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-stone-100 flex flex-col items-center text-center space-y-3">
+                         <h3 class="font-bold text-lg text-stone-900">Chicken Thali</h3>
+                         <span class="text-andhra-red font-extrabold text-2xl">₹220/-</span>
+                     </div>
+                     <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-stone-100 flex flex-col items-center text-center space-y-3">
+                         <h3 class="font-bold text-lg text-stone-900">Egg Thali</h3>
+                         <span class="text-andhra-red font-extrabold text-2xl">₹160/-</span>
+                     </div>
+                     <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-stone-100 flex flex-col items-center text-center space-y-3">
+                         <h3 class="font-bold text-lg text-stone-900">Mutton Mundi Thali</h3>
+                         <span class="text-andhra-red font-extrabold text-2xl">₹280/-</span>
+                     </div>
+                </div>
+            </div>
+             <div class="mt-12 bg-white rounded-3xl p-8 border border-stone-100 shadow-xl border border-amber-100 text-center">
+                 <p class="text-2xl font-bold text-andhra-gold heading-font mb-3">🔥 We Accept Party Orders 🔥</p>
+                 <p class="text-stone-600">Bring the original Rushika flavor to your special events in Dharwad. Contact us for custom menus.</p>
+             </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 text-stone-500 text-xs py-10 border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Rushika's ANDHRA KITCHEN, Dharwad. All Rights Reserved.</p>
+            <p>Designed and Developed by <a href="#" class="text-stone-300 font-medium hover:text-white transition-colors">BADOZA</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const navLinks = mobileMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Hero Image Carousel Script
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+
+            if(slides.length > 0) {
+                setInterval(() => {
+                    // Hide current
+                    slides[currentSlide].classList.remove('opacity-100', 'z-10');
+                    slides[currentSlide].classList.add('opacity-0', 'z-0');
+                    
+                    // Move to next
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    
+                    // Show next
+                    slides[currentSlide].classList.remove('opacity-0', 'z-0');
+                    slides[currentSlide].classList.add('opacity-100', 'z-10');
+                }, 3500); // changes every 3.5 seconds
+            }
+        });
+    </script>
+</body>
+</html>
                 extend: {
                     colors: {
                         andhra: {
@@ -413,7 +756,7 @@
     <footer class="bg-stone-950 text-stone-500 text-xs py-10 border-t border-stone-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>&copy; 2026 Rushika's ANDHRA KITCHEN, Dharwad. All Rights Reserved.</p>
-            <p>Designed and Developed by <span class="text-stone-300 font-medium">Kunal Dongare</span></p>
+            <p>Designed and Developed by <span class="text-stone-300 font-medium">BADOZA</span></p>
         </div>
     </footer>
 
